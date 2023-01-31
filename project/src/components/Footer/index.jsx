@@ -5,7 +5,7 @@ import { SiInstagram, SiWhatsapp } from 'react-icons/si'
 export default function Footer() {
   return (
     <footer className={['wrapper', s.footer_container].join(' ')}>
-        <div className={s.contacts_container}>
+        <div className={s.contacts_container} id='contacts'>
           <p  className={s.contacts}>Contacts</p>
           <p className={s.telefon}>+49 123 456 78 9</p>
         

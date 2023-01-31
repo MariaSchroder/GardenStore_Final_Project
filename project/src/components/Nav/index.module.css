@@ -21,7 +21,7 @@
     margin-right: 59px;
 }
 
-.nav_left_container p {
+.catalog {
     border: 2px solid #339933;
     border-radius: 5px;
     width: 129px;
@@ -32,7 +32,7 @@
     padding-top: 12px;
     font-size: 19px;
     font-weight: 600;
-
+    text-decoration: none
 }
 
 .nav_right_container {

@@ -1,10 +1,10 @@
 import React from "react";
 import s from './index.module.css'
 
-export default function CategoryCard() {
+export default function AllProductsPage() {
   return (
     <div>
-        categorycard
+AllProductsPage
     </div>
   );
 }

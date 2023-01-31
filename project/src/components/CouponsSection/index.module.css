@@ -1,0 +1,67 @@
+.coupons_section {
+   background: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%);
+   border: 1px solid gray;
+   width: auto;
+   height: 476px;
+   margin: 50px 0 50px 0;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.coupons_section img {
+    background-color: transparent;
+    margin: 27px 927px 27px 91px;
+}
+
+.discount {
+  position: absolute;
+  right: 140px;
+  top: 50px;
+
+  background-color: transparent;
+  color: white;
+  font-size: 90px;
+  font-weight: 700;
+ }
+
+ .first_order {
+    position: absolute;
+    right: 330px;
+    top: 155px;
+
+    background-color: transparent;
+    color: white;
+    font-size: 58px;
+    font-weight: 600;
+ }
+
+ .discount_form input{
+    position: absolute;
+    right: 250px;
+    bottom: 140px;
+
+    width: 473px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 40px;
+ }
+
+ .discount_form button {
+    position: absolute;
+    right: 250px;
+    bottom: 45px;
+
+    width: 473px;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    padding-left: 40px;
+ }

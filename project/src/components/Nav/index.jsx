@@ -9,14 +9,14 @@ export default function Nav() {
     <header className={['wrapper', s.nav_container].join(' ')}>
       <div className={s.nav_left_container }>
         <Link to='/'><img src={ logo } alt="logo" /></Link> 
-        <p>Catalog</p>
+        <Link to='/allproducts' className={s.catalog}>Catalog</Link>
       </div> 
       
       <nav className={s.nav_right_container }>
         <Link to='/categories'>Categories</Link>
-        <p><a href="#">Coupon</a></p>
-        <p><a href="#">Sale</a></p>
-        <p>Contacts</p> 
+        <p><a href="#coupon">Coupon</a></p>
+        <p><a href="#sale">Discount</a></p>
+        <p><a href="#contacts">Contacts</a></p>
         <Link to='/cart' className={s.cart_logo}><BsHandbag /></Link>
       </nav>
       

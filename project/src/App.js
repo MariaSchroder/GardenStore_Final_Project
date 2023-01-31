@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import CategoriesPage from './pages/CategoriesPage';
 import CartPage from './pages/CartPage';
 import MainPage from './pages/MainPage';
+import AllProductsPage from './pages/AllProductsPage';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<MainPage />} />
+          <Route path='/allproducts' element={<AllProductsPage />} />
           <Route path='/categories' element={<CategoriesPage />} />
           <Route path='/cart' element={<CartPage />} />
           </Route>
