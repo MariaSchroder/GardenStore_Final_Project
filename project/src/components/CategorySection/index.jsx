@@ -1,16 +1,20 @@
 import React from "react";
+import CategoriesContainer from "../CategoriesContainer";
 import s from './index.module.css'
 
 
 export default function CategorySection() {
   return (
-    <div className={['wrapper', s.categories_section].join(' ')}>
-      <section>
-       
-        <p>Categories</p>
+    <div className='wrapper'>
+      <section className={s.categories_section}>
         
-        <p>All categories</p>
-       
+        <div className={s.categories_route}>
+          <span className={s.categories_catalog}>Catalog</span>
+          
+          <button className={s.allCategories}>All categories</button>
+        </div>
+        
+        <CategoriesContainer />
       </section>
     </div>
   );

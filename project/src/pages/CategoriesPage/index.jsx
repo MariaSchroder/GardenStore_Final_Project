@@ -15,9 +15,14 @@ export default function CategoriesPage() {
   
   return (
     <div>
-      {
-        categories.map(el => <CategoriesContainer key={el.id} {...el} />)
-      }
+      <p className={s.category_p}>Categories</p>
+      
+      <div className={s.category_page}>
+        {
+          categories.map(el => <CategoriesContainer key={el.id} {...el} />)
+        }
+      </div>
+      
     </div>
   );
 }

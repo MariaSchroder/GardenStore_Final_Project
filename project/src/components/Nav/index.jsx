@@ -13,10 +13,10 @@ export default function Nav() {
       </div> 
       
       <nav className={s.nav_right_container }>
-        <Link to='/categories'>Categories</Link>
+        <Link to='/categories'>Catalogs</Link>
         <p><a href="#coupon">Coupon</a></p>
-        <p><a href="#sale">Discount</a></p>
-        <p><a href="#contacts">Contacts</a></p>
+        <p><a href="#sale">Sale</a></p>
+        <p><a href="#contacts">Contact</a></p>
         <Link to='/cart' className={s.cart_logo}><BsHandbag /></Link>
       </nav>
       

@@ -6,8 +6,8 @@ export default function Footer() {
   return (
     <footer className={['wrapper', s.footer_container].join(' ')}>
         <div className={s.contacts_container} id='contacts'>
-          <p  className={s.contacts}>Contacts</p>
-          <p className={s.telefon}>+49 123 456 78 9</p>
+          <p  className={s.contacts}>Contact</p>
+          <p className={s.telefon}>+49 999 999 99 99</p>
         
           <div className={s.media_container}>
             <a href="https://www.instagram.com/" target='blank'>Instagram</a>
@@ -21,10 +21,10 @@ export default function Footer() {
         <div className={s.address_container}>
           <ul> 
             <li>Address</li>
-            <li>Berliner Allee 123</li>
-            <li>12345 Berlin</li>
-            <li>Working mode</li>
-            <li>24/day</li>
+            <li>Linkstraße 2, 8 OG, 10785</li>
+            <li>Berlin, Deutschland</li>
+            <li>Working Hours:</li>
+            <li>24 hours a day</li>
           </ul>
         </div>
     </footer>

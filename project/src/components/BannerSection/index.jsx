@@ -13,11 +13,9 @@ export default function BannerSection() {
           
           <div className={s.info_block}>
             <p>Sale</p>
-            <p>In honor of the new season</p>
-            <a href='#sale'>All promotions</a>
-            
-            
-            <p>More</p>
+            <p>New season</p>
+            <a href='#sale'>Sale</a>
+            <p>Learn more</p>
           </div>
           
           <img src={ flowerbed_img } alt="flowerbed" />

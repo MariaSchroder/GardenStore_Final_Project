@@ -6,11 +6,16 @@ import SalesSection from "../../components/SalesSection";
 import s from './index.module.css'
 
 export default function MainPage() {
+  
+  
   return (
+    
+    
     <div className='wrapper'>
       
       <BannerSection />
       <CategorySection />
+    
       <CouponsSection />
       <SalesSection />
     </div>
