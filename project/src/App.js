@@ -5,6 +5,8 @@ import CategoriesPage from './pages/CategoriesPage';
 import CartPage from './pages/CartPage';
 import MainPage from './pages/MainPage';
 import AllProductsPage from './pages/AllProductsPage';
+import CategoryProductsPage from './pages/CategoryProductsPage';
+
 
 
 function App() {
@@ -15,8 +17,10 @@ function App() {
           <Route index element={<MainPage />} />
           <Route path='/allproducts' element={<AllProductsPage />} />
           <Route path='/categories' element={<CategoriesPage />} />
+          <Route path=':category' element={<CategoryProductsPage />} />
+          
           <Route path='/cart' element={<CartPage />} />
-          </Route>
+        </Route>
       </Routes>
     </div>
   );
