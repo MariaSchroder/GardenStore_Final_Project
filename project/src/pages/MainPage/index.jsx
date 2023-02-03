@@ -1,11 +1,11 @@
 import React from "react";
 import BannerSection from "../../components/BannerSection";
-import CategorySection from "../../components/CategorySection";
+import CategoriesSection from "../../components/CategoriesSection";
 import CouponsSection from "../../components/CouponsSection";
 import SalesSection from "../../components/SalesSection";
 import s from './index.module.css'
 
-export default function MainPage() {
+export default function MainPage({ image, title }) {
   
   
   return (
@@ -14,8 +14,7 @@ export default function MainPage() {
     <div className='wrapper'>
       
       <BannerSection />
-      <CategorySection />
-    
+      <CategoriesSection />
       <CouponsSection />
       <SalesSection />
     </div>

@@ -4,7 +4,9 @@ import { SiInstagram, SiWhatsapp } from 'react-icons/si'
 
 export default function Footer() {
   return (
-    <footer className={['wrapper', s.footer_container].join(' ')}>
+    <footer className={s.footer_container}>
+      <div>
+        
         <div className={s.contacts_container} id='contacts'>
           <p  className={s.contacts}>Contact</p>
           <p className={s.telefon}>+49 999 999 99 99</p>
@@ -27,6 +29,8 @@ export default function Footer() {
             <li>24 hours a day</li>
           </ul>
         </div>
+      </div>
+        
     </footer>
   );
 }

@@ -1,10 +1,17 @@
 .sales_section {
+   background-color: #A1E2EB;
+   margin: 76px 0 50px 0;
+}
+
+.sales_section > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 600px;
     background-color: #A1E2EB; 
     margin: 76px 0; 
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .sales_section img {

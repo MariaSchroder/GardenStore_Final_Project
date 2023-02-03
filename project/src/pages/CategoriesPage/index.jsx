@@ -13,16 +13,18 @@ export default function CategoriesPage() {
     dispatch(load_categories)
   }, []);
   
+  
   return (
-    <div>
-      <p className={s.category_p}>Categories</p>
+    <div className={s.categories_container}>
+      <div>
+        <p className={s.categories_p}>Categories</p>
       
-      <div className={s.category_page}>
-        {
-          categories.map(el => <CategoriesContainer key={el.id} {...el} />)
-        }
+        <div className={s.categories_page}>
+          {
+            categories.map(el => <CategoriesContainer key={el.id} {...el} />)
+          }
+        </div>
       </div>
-      
     </div>
   );
 }

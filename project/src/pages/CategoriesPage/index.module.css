@@ -1,11 +1,16 @@
-.category_page {
+.categories_container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.categories_page {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin: 0 25px 115px 25px;
 }
 
-.category_p {
+.categories_p {
     margin: 70px 25px;
     font-size: 40px;
     font-weight: 700;

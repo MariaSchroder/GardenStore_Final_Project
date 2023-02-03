@@ -6,7 +6,7 @@ import { BsHandbag } from 'react-icons/bs'
 
 export default function Nav() {
   return (
-    <header className={['wrapper', s.nav_container].join(' ')}>
+    <header className={s.nav_container}>
       <div className={s.nav_left_container }>
         <Link to='/'><img src={ logo } alt="logo" /></Link> 
         <Link to='/allproducts' className={s.catalog}>Catalog</Link>
