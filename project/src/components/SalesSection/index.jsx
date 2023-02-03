@@ -1,10 +1,11 @@
 import React from "react";
+import SalesSectionContainer from "../SalesSectionContainer";
 import s from './index.module.css'
 
 export default function SalesSection() {
   return (
-    <div>
-        <p id="sale">SalesSection###</p> 
+    <div id="sale">
+        <SalesSectionContainer />
     </div>
   );
 }

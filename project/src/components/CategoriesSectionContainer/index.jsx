@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect }from "react";
 import s from './index.module.css'
 import { useSelector, useDispatch } from "react-redux";
 import CategorySectionCards from "../CategoriesSectionCard";
 import { load_categories } from "../../request/categories_req";
-import { useEffect } from "react";
 
 
 export default function CategoriesSectionContainer() {

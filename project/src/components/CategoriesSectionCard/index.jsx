@@ -9,8 +9,7 @@ export default function CategoriesSectionCard({ id, title, image }) {
   return (
     <div className={s.categories_section}>
       <img src={`http://localhost:3333${image}`} alt={ title } />
-        <p>{ title }</p>
-      
+      <p>{ title }</p>
     </div>
   );
 }
