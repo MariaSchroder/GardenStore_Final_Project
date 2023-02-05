@@ -14,20 +14,21 @@ export default function SalesSectionContainer() {
     dispatch(load_all_products)
   }, []);
   
-  const random_id = Math.round(Math.random() * 50);
-  console.log(random_id);
+
   
   return (
     <section className={s.sales_section}>
       <div>
-        <p>Sale</p>
+        <p className={s.sales_block}>Sale</p>
+        
         <div className={s.sales_card}>
           {
-
-            products.slice(0, 4)
-                      .map( el => <SalesSectionCard key={el.id} {...el} />)
+            products.sort(() => 0.5 - Math.random())
+                    .slice(0, 4)
+                    .map( el => <SalesSectionCard key={el.id} {...el} />)
           }
         </div>
+      
       </div>
          
     </section>
