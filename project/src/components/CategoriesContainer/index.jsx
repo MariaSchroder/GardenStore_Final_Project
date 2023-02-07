@@ -1,14 +1,19 @@
 import React from 'react'; 
+import { Link } from 'react-router-dom';
 import s from './index.module.css' 
 
 
-export default function CategoriesContainer({ title, image }) { 
+export default function CategoriesCard({ id, title, image }) { 
   
 return ( 
 
   <div className={s.categories}> 
-    <img src={`http://localhost:3333${image}`} alt={ title } /> 
-    <p className={s.categories_title}>{ title }</p> 
+    
+    <Link to={`/categories/${id}`}>
+      <img src={`http://localhost:3333${image}`} alt={ title } /> 
+      <p className={s.categories_title}>{ title }</p> 
+    </Link>
+    
   </div> 
   ); 
 }
