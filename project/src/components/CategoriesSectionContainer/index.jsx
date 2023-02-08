@@ -25,10 +25,11 @@ export default function CategoriesSectionContainer() {
         </div>
         
        <div className={s.categories_card}>
-        {
-          categories.slice(0, 4)
-                    .map(el => <CategorySectionCards key={el.id} {...el}/>)
-        }
+          {
+            categories.sort(() => 0.5 - Math.random())
+                      .slice(0, 4)
+                      .map(el => <CategorySectionCards key={el.id} {...el}/>)
+          }
        </div>
       </div>
     </section>

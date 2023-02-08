@@ -9,14 +9,17 @@ export default function CategoryProductCard({id, title, image, price, discont_pr
   
   return (
     <div className={s.category_card}>
-      <Link>
+      <Link to={`/products/${id}`}>
         <img src={`http://localhost:3333${image}`} alt={title} />
         
-        <div className={s.category_price_block}>
-          <p>{ discont_price } €</p>
-          <p>{ price } €</p>
-          <p>{ discount } %</p>
-        </div>
+        <div className={s.product_price_block}>
+            <span> 
+              { discont_price }
+              <span> €</span>
+            </span>
+            <p>{ price } €</p>
+            <p>- { discount } %</p>
+          </div>
         
         <p>{title}</p>
       </Link>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import s from './index.module.css' 
 
 
-export default function CategoriesCard({ id, title, image }) { 
+export default function CategoriesCards({ id, title, image }) { 
   
 return ( 
 

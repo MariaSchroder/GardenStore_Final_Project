@@ -14,7 +14,7 @@ export default function SalesSectionCard({ id, title, image, price, discont_pric
         <div className={s.price_block}>
           <p>{ discont_price } €</p>
           <p>{ price } €</p>
-          <p>{ discount } %</p>
+          <p>-{ discount } %</p>
         </div>
         
         <p>{ title }</p>

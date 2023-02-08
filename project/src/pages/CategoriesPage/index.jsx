@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import s from './index.module.css'
 import { useDispatch, useSelector } from "react-redux";
 import { load_categories } from "../../request/categories_req";
-import CategoriesCard from "../../components/CategoriesContainer";
+import CategoriesCards from "../../components/CategoriesCards";
 
 export default function CategoriesPage() {
   
@@ -21,7 +21,7 @@ export default function CategoriesPage() {
       
         <div className={s.categories_page}>
           {
-            categories.map(el => <CategoriesCard key={el.id} {...el} />)
+            categories.map(el => <CategoriesCards key={el.id} {...el} />)
           }
         </div>
       </div>

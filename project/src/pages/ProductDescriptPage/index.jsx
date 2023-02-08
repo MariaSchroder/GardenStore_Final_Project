@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import s from './index.module.css'
 import { useDispatch, useSelector } from "react-redux";
 import { load_product } from "../../request/product_req";
+import Button from "../../components/Button";
 
 
 export default function ProductDescriptPage() {
@@ -19,30 +20,35 @@ export default function ProductDescriptPage() {
 
   const discount = Math.round(((price - discont_price) / price) * 100);
 
-  console.log(product)
+  
+  
+  
   return (
-    <div>
+    <div className={s.descr_page}>
+      <p>{ title }</p>
       
-      <div>
-        <p>{ title }</p>
-        <img src={`http://localhost:3333${image}`} alt={ title } /> 
-      </div>
-      
-      <div>
+      <div className={s.descr_page_info}>
+        <img src={`http://localhost:3333${image}`} alt={ title } />
+
+        <div>
+          <div className={s.product_price_block}>
+            <span> 
+              { discont_price }
+              <span> €</span>
+            </span>
+            <p>{ price } €</p>
+            <p>- { discount } %</p>
+          </div>
         
-        <div className={s.category_price_block}>
-          <p>{ discont_price } €</p>
-          <p>{ price } €</p>
-          <p>{ discount } %</p>
+          <Button>To cart</Button>
+          <p className={s.descr}>Description:</p>
+          <p className={s.product_descr}>{ description }</p>
+          
+          
         </div>
-        
-        <button>To cart</button>
-        <p>Description:</p>
-        { description }
-        
+  
       </div>
-
-
     </div>
+  
   );
 }
