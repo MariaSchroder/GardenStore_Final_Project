@@ -4,13 +4,14 @@ import thunk from 'redux-thunk'
 import { categoryProductsReducer } from './reducers/categoryProducts';
 import { allProductsReducer } from './reducers/allProducts';
 import { productReducer } from './reducers/product';
-
+import { cartReducer } from './reducers/cart';
 
 const rootReducer = combineReducers({
     categories: categoriesReducer,
     categoryProducts: categoryProductsReducer,
     allProducts: allProductsReducer,
-    product: productReducer
+    product: productReducer,
+    cart: cartReducer
 
 });
 
