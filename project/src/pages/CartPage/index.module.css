@@ -11,11 +11,85 @@
 
 .cart_clear_back {
     display: flex;
+    gap: 520px;
+    border-bottom: 1px solid #A7A7A7;
+    width: 828px;
+    padding-bottom: 35px;
+    margin-left: 25px;
 }
 
+.cart_clear_back p {
+    font-size: 20px;
+    font-weight: 500;
+}
 
+.cart_clear_back p:first-child {
+    color: gray;
+}
 
+.cart_clear_back p span {
+    padding: 10px;
+}
 
 .cart_end_order {
     display: flex;
+    justify-content: space-between;
+}
+
+.order {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 25px;
+    width: 496px;
+    height: 393px;
+}
+
+.order > p {
+   font-size: 28px;
+   font-weight: 600;
+   padding-bottom: 47px;
+}
+
+.total_price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 49px;
+}
+
+.total_price p:first-child {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.total_price span   {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.total_price span span  {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.order_form {
+    display: grid;
+    gap: 25px;
+    align-items: center;
+}
+
+.order_form input{
+    width: 446px;
+    height: 73px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 40px;
+    
+}
+
+.order_form button{
+    width: 446px;
+    height: 73px;
+    border-radius: 20px;
 }

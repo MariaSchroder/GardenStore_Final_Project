@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import Button from "../../components/Button";
 import CartCard from "../../components/CartCard";
 import s from './index.module.css'
 
@@ -11,11 +12,13 @@ export default function CartPage() {
   return (
     <div className={s.cart}>
       <p>Shopping cart</p>
-      
+     
       <div className={s.cart_clear_back}>
         <p>Clear cart</p>
-        <p>Back to the store &#62;</p>
+        <p>Back to the store <span>&#62;</span></p>
       </div>
+      
+      
         
       <div className={s.cart_end_order}>
         <div>
@@ -24,17 +27,21 @@ export default function CartPage() {
           }
         </div>
 
-        <div>
+        <div className={s.order}>
           <p>Order details</p>
       
-          <div>
+          <div className={s.total_price}>
             <p>Total</p>
-            <p>total price</p>
+            <span> 
+              12345
+              {/* { discont_price } */}
+              <span> €</span>
+            </span>
           </div>
 
-          <form className={s._form} id='order'>
+          <form className={s.order_form} id='order'>
             <input type="text" name="telNumber" placeholder="+49" />
-            <button>Order</button>
+            <Button>Order</Button>
           </form>
         </div>
 
