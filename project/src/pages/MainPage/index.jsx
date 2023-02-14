@@ -1,22 +1,19 @@
 import React from "react";
 import BannerSection from "../../components/BannerSection";
-import CategoriesSection from "../../components/CategoriesSection";
+import CategoriesSectionContainer from "../../components/CategoriesSectionContainer";
 import CouponsSection from "../../components/CouponsSection";
-import SalesSection from "../../components/SalesSection";
+import SalesSectionContainer from "../../components/SalesSectionContainer";
 import s from './index.module.css'
 
-export default function MainPage({ image, title }) {
+export default function MainPage() {
   
   
   return (
-    
-    
-    <div className='wrapper'>
-      
+    <div>
       <BannerSection />
-      <CategoriesSection />
+      <CategoriesSectionContainer />
       <CouponsSection />
-      <SalesSection />
+      <SalesSectionContainer />
     </div>
   );
 }

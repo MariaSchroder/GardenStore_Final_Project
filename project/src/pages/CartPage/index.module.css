@@ -25,6 +25,7 @@
 
 .cart_clear_back p:first-child {
     color: gray;
+    cursor: pointer;
 }
 
 .cart_clear_back p span {
@@ -88,8 +89,13 @@
     
 }
 
-.order_form button{
+.btn {
+    border: 2px solid #339933;
+    background-color: #339933;
+    border-radius: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
     width: 446px;
     height: 73px;
-    border-radius: 20px;
 }

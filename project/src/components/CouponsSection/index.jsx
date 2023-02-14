@@ -1,5 +1,4 @@
 import React from "react";
-import CategorySection from "../CategoriesSection";
 import s from './index.module.css'
 import gnome_img from './media/gnome_img.png'
 
@@ -8,7 +7,7 @@ export default function CouponsSection() {
 
   
   return (
-    <section className={s.coupons_section}>
+    <section className={s.coupons_section} id='coupon'>
       <div>
         <img src={gnome_img} alt="gnome" />
       

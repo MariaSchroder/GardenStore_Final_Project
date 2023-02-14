@@ -54,6 +54,18 @@
     color: #FF32A1; 
     margin-right: 40px;  
  }
+
+ .btn {
+    border: 2px solid #339933;
+    background-color: #339933;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    width: 350px;
+    height: 86px;
+    cursor: pointer;
+}
  
  .descr {
     font-size: 20px;

@@ -18,7 +18,7 @@ export default function SalesSectionContainer() {
   
   return (
     <section className={s.sales_section}>
-      <div>
+      <div id="sale">
         <p className={s.sales_block}>Sale</p>
         
         <div className={s.sales_card}>

@@ -1,20 +1,22 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import Button from "../../components/Button";
+import { useSelector, useDispatch } from "react-redux";
 import CartCard from "../../components/CartCard";
 import s from './index.module.css'
+import { clearCart } from "../../store/reducers/cart";
 
 export default function CartPage() {
   
   const cart = useSelector(state => state.cart);
-  console.log(cart)
+  const dispatch = useDispatch();
+
+  const clear_cart = () => dispatch(clearCart()); 
   
   return (
     <div className={s.cart}>
       <p>Shopping cart</p>
      
       <div className={s.cart_clear_back}>
-        <p>Clear cart</p>
+        <p  onClick={clear_cart}>Clear cart</p>
         <p>Back to the store <span>&#62;</span></p>
       </div>
       
@@ -41,7 +43,7 @@ export default function CartPage() {
 
           <form className={s.order_form} id='order'>
             <input type="text" name="telNumber" placeholder="+49" />
-            <Button>Order</Button>
+            <button className={s.btn}>Order</button>
           </form>
         </div>
 

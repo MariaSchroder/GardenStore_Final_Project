@@ -1,11 +1,18 @@
 import React from "react";
 import s from './index.module.css'
 import { RiCloseLine } from 'react-icons/ri'
+import { useDispatch } from "react-redux";
+import { deleteCard } from "../../store/reducers/cart"; 
+
+
 
 
 
 export default function CartCard({ id, title, price, discont_price, image, count }) {
   
+  const dispatch = useDispatch();
+  
+  const delete_card = () => dispatch(deleteCard(id)); 
 
   
   return (
@@ -30,7 +37,9 @@ export default function CartCard({ id, title, price, discont_price, image, count
             <p>{ price } €</p>
           </div>
           
-          <RiCloseLine className={s.cross}/>
+          <RiCloseLine onClick={delete_card} className={s.cross}/>
+          
+          
        
         
         

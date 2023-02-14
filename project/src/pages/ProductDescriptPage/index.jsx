@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import s from './index.module.css'
 import { useDispatch, useSelector } from "react-redux";
 import { load_product } from "../../request/product_req";
-import Button from "../../components/Button";
+import { addToCart } from '../../store/reducers/cart'
 
 
 export default function ProductDescriptPage() {
@@ -20,7 +20,7 @@ export default function ProductDescriptPage() {
 
   const discount = Math.round(((price - discont_price) / price) * 100);
 
-  
+  const add_to_cart = () => dispatch(addToCart({id: +id, title, image, price, discont_price }))
   
   
   return (
@@ -40,7 +40,7 @@ export default function ProductDescriptPage() {
             <p>- { discount } %</p>
           </div>
         
-          <Button>To cart</Button>
+          <button className={s.btn} onClick={add_to_cart}>To cart</button>
           <p className={s.descr}>Description:</p>
           <p className={s.product_descr}>{ description }</p>
           
