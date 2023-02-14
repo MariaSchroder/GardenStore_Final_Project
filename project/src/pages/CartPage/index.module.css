@@ -18,12 +18,17 @@
     margin-left: 25px;
 }
 
-.cart_clear_back p {
-    font-size: 20px;
-    font-weight: 500;
+.cart_clear_back a {
+    text-decoration: none;
 }
 
-.cart_clear_back p:first-child {
+.cart_clear_back a > p {
+    color: black;
+}
+
+.cart_clear_back p{
+    font-size: 20px;
+    font-weight: 500;
     color: gray;
     cursor: pointer;
 }
@@ -37,12 +42,20 @@
     justify-content: space-between;
 }
 
+.cart_end_order > p {
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+    margin: 40px 0 0 25px;
+}
+
 .order {
     border: 2px solid black;
     border-radius: 20px;
     padding: 25px;
     width: 496px;
     height: 393px;
+    margin-right: 25px;
 }
 
 .order > p {

@@ -15,6 +15,7 @@ export default function CartCard({ id, title, price, discont_price, image, count
   const delete_card = () => dispatch(deleteCard(id)); 
 
   
+
   return (
     <div className={s.cart_card}>
       

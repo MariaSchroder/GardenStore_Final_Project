@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import logo from './media/logo.png'
 import { BsHandbag } from 'react-icons/bs'
 
+
 export default function Nav() {
   return (
     <header className={s.nav_container}>
