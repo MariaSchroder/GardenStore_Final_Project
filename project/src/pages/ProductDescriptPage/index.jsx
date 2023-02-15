@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import s from './index.module.css'
 import { useDispatch, useSelector } from "react-redux";
 import { load_product } from "../../request/product_req";
@@ -25,6 +25,11 @@ export default function ProductDescriptPage() {
   
   return (
     <div className={s.descr_page}>
+
+      <Link to="/categories">
+        <p>Back to the store <span>&#62;</span></p>
+      </Link>
+
       <p>{ title }</p>
       
       <div className={s.descr_page_info}>

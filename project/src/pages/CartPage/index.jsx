@@ -23,7 +23,7 @@ export default function CartPage() {
      
       <div className={s.cart_clear_back}>
         <p  onClick={clear_cart}>Clear cart</p>
-        <Link className={s.link} to="/categories">
+        <Link to="/categories">
           <p>Back to the store <span>&#62;</span></p>
         </Link>
       </div>

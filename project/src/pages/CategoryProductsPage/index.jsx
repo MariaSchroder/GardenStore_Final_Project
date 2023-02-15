@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import s from './index.module.css'
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { load_category_products } from "../../request/categoryProducts_req";
 import CategoryProductCard from "../../components/CategoryProductCard";
@@ -26,7 +26,41 @@ export default function CategoryProductsPage() {
   
   return (
     <div className={s.products_page}>
+
+      <Link to="/categories">
+        <p>Back to the store <span>&#62;</span></p>
+      </Link>
+      
       <p>{categoryTitle}</p>  
+
+
+      <div>   
+        <div>
+          <span>Price</span>
+          <form>
+            <input type="number" name="min" placeholder="from" min="0"/>
+            <input type="number" name="max" placeholder="to" />
+            <button>Search</button>
+          </form>
+        </div>
+
+        <div>
+          <p>Discounted items</p>
+          <input type="checkbox"/>
+        </div>
+
+        <div>
+          <p>Sorted by</p>
+          <select>
+            <option value="default">default</option>
+            <option value="title">title</option>
+            <option value="price">price</option>
+          </select>
+        </div>
+      </div>
+      
+      
+
       <div className={s.category_products}>
         {
           category_products.map(el => <CategoryProductCard key={el.id} {...el} />)

@@ -2,7 +2,7 @@ import React from "react";
 import s from './index.module.css'
 import { RiCloseLine } from 'react-icons/ri'
 import { useDispatch } from "react-redux";
-import { deleteCard } from "../../store/reducers/cart"; 
+import { decrementCount, deleteCard, incrementCount } from "../../store/reducers/cart"; 
 
 
 
@@ -13,6 +13,8 @@ export default function CartCard({ id, title, price, discont_price, image, count
   const dispatch = useDispatch();
   
   const delete_card = () => dispatch(deleteCard(id)); 
+  const increment = () => dispatch(incrementCount(id));
+  const decrement = () => dispatch(decrementCount(id));
 
   
 
@@ -25,9 +27,9 @@ export default function CartCard({ id, title, price, discont_price, image, count
           <p>{ title }</p>
           
           <div className={s.triggers}>
-            <button>&ndash;</button>
+            <button onClick={decrement}>&ndash;</button>
             <p>{ count }</p>
-            <button>+</button>
+            <button onClick={increment}>+</button>
           </div>
           
           <div className={s.price_block}>

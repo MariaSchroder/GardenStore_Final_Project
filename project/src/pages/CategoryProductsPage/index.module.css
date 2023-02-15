@@ -4,6 +4,16 @@
     margin-bottom: 150px;
 }
 
+.products_page a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: gray;
+} 
+.products_page a > p{
+    margin-left: 15px;
+} 
+
 .products_page > p {
     font-size: 40px;
     font-weight: 700;

@@ -15,8 +15,8 @@ export default function Nav() {
       
       <nav className={s.nav_right_container }>
         <Link to='/categories'>Catalogs</Link>
-        <p><a href="#coupon">Coupon</a></p>
-        <p><a href="#sale">Sale</a></p>
+        <p><a href="/#coupon">Coupon</a></p>
+        <p><a href="/#sale">Sale</a></p>
         <p><a href="#contacts">Contact</a></p>
         <Link to='/cart' className={s.cart_logo}><BsHandbag /></Link>
       </nav>
