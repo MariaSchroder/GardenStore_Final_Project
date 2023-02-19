@@ -27,7 +27,7 @@ export default function CategoryProductCard({id, title, image, price, discont_pr
             <p>- { discount } %</p>
           </div>
         
-        <p>{title}</p>
+        <p className={s.product_title}>{title}</p>
       </Link>
 
       <button onClick={add_to_cart}>Add to cart</button>

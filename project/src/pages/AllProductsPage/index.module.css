@@ -1,0 +1,28 @@
+.all_products_container {
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-bottom: 150px;
+}
+
+.all_products_container a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: gray;
+} 
+.all_products_container a > p{
+    margin-left: 15px;
+} 
+
+.all_products_container > p {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 70px 15px;
+
+} 
+
+.all_products_page {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
