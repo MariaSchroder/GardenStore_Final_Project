@@ -13,9 +13,7 @@ export default function CartPage() {
 
   const clear_cart = () => dispatch(clearCart()); 
   
-  const total = Math.round(cart.reduce((prev, { discont_price, count }) => prev + discont_price * count, 0)).toFixed(2);
-
-
+  const total = cart.reduce((prev, el) => prev + el.discont_price * el.count, 0).toFixed(2);
 
   return (
     <div className={s.cart}>

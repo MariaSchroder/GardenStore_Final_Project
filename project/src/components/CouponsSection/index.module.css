@@ -45,7 +45,6 @@
     position: absolute;
     right: 250px;
     bottom: 140px;
-
     width: 473px;
     height: 70px;
     border: 1px solid white;
@@ -53,6 +52,7 @@
     font-size: 18px;
     font-weight: 500;
     padding-left: 40px;
+    outline: none;
  }
 
  .discount_form button {

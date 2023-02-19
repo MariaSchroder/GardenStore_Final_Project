@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { load_category_products } from "../../request/categoryProducts_req";
 import CategoryProductCard from "../../components/CategoryProductCard";
+import ProductsSort from "../../components/ProductsSort";
 
 
 export default function CategoryProductsPage() {
@@ -33,37 +34,13 @@ export default function CategoryProductsPage() {
       
       <p>{categoryTitle}</p>  
 
-
-      <div>   
-        <div>
-          <span>Price</span>
-          <form>
-            <input type="number" name="min" placeholder="from" min="0"/>
-            <input type="number" name="max" placeholder="to" />
-            <button>Search</button>
-          </form>
-        </div>
-
-        <div>
-          <p>Discounted items</p>
-          <input type="checkbox"/>
-        </div>
-
-        <div>
-          <p>Sorted by</p>
-          <select>
-            <option value="default">default</option>
-            <option value="title">title</option>
-            <option value="price">price</option>
-          </select>
-        </div>
-      </div>
-      
-      
-
+      <ProductsSort />
+    
       <div className={s.category_products}>
         {
-          category_products.map(el => <CategoryProductCard key={el.id} {...el} />)
+          category_products
+            .filter(el => !el.hide)
+            .map(el => <CategoryProductCard key={el.id} {...el} />)
         }
       </div>
     </div>

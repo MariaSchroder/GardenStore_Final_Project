@@ -99,7 +99,8 @@
     font-size: 18px;
     font-weight: 500;
     padding-left: 40px;
-    
+    outline: none;
+
 }
 
 .btn {
