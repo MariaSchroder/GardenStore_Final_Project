@@ -1,4 +1,3 @@
-
 const defaultState = [];
 let firstState = [];
 
@@ -9,9 +8,7 @@ const SEARCH_CATEGORY_PRODUCTS_PRICE = 'SEARCH_CATEGORY_PRODUCTS_PRICE';
 
 
 export const loadCategoryProducts = payload => ({ type: LOAD_CATEGORY_PRODUCTS, payload });
-
 export const sortCategoryProducts = payload => ({ type: SORT_CATEGORY_PRODUCTS, payload });
-
 export const searchCategoryProductsPrice = payload => ({ type: SEARCH_CATEGORY_PRODUCTS_PRICE, payload });
 
 

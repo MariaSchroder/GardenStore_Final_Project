@@ -1,0 +1,97 @@
+.sort {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.sort_price > span {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 20px 10px;
+    padding-top: 14px;
+}
+
+.sort_price form > input {
+   width: 103px;
+   height: 40px;
+   border-radius: 7px;
+   margin-right: 12px;
+   font-size: 16px;
+   font-weight: 500;
+   padding-left: 10px;
+   outline: none;    /* убрать фокусировку с input  */
+}
+
+ /* убрать стрелочки на input - number */
+ .sort_price > input::-webkit-outer-spin-button,
+               input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+} 
+
+.sort_price form > button {
+    width: 103px;
+    height: 42px;
+    border-radius: 7px;
+    border: 1px solid white;
+    margin-right: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #339933;
+    color: white;
+    cursor: pointer;  
+ }
+
+ .sort_price form > button:hover {
+    font-weight: 700;
+    border: 1px solid #339933;
+ }
+
+ .sort_sale_price > span {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 10px 10px 25px;
+    padding-top: 14px;
+ }
+
+ .sort_sale_price > input {
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    cursor: pointer; 
+    appearance: none;  /* скрыть checkbox */
+ }
+
+/* стилизовать checkbox */
+ .sort_sale_price > input:checked {
+    background-color: #339933;
+}
+
+.sort_sale_price > input:before {
+    content:"\2713";
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.sort_by > span {
+    font-size: 20px;
+    font-weight: 600; 
+    margin: 0 10px 10px 25px;
+    padding-top: 14px;
+}
+
+.sort_by > select {
+    width: 219px;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 500; 
+    color: #797979;
+    padding-left: 10px; 
+    outline: none;  
+    cursor: pointer;
+}
+

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import AllProducts from "../../components/AllProducts";
 import { load_all_products } from "../../request/allProducts_req";
 import { Link } from "react-router-dom";
-import ProductsSort from "../../components/ProductsSort";
+import AllProductsSort from "../../components/AllProductsSort";
 
 
 
@@ -28,11 +28,13 @@ export default function AllProductsPage() {
 
       <p>All Products</p>
       
-      <ProductsSort />
+      <AllProductsSort />
 
       <div className={s.all_products_page}>
         {
-          allProducts.map(el => <AllProducts key={el.id} {...el} />)
+          allProducts
+            .filter(el => !el.hide)
+            .map(el => <AllProducts key={el.id} {...el} />)
         }
       </div>
     </div>
