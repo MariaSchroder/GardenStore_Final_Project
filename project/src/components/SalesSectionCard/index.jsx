@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import s from './index.module.css'
 
 export default function SalesSectionCard({ id, title, image, price, discont_price }) {
@@ -9,6 +10,7 @@ export default function SalesSectionCard({ id, title, image, price, discont_pric
   return (
     <div className={s.sales_section}>
 
+      <Link to={`/products/${id}`}>
         <img src={`http://localhost:3333${image}`} alt={ title } />
         
         <div className={s.price_block}>
@@ -18,6 +20,9 @@ export default function SalesSectionCard({ id, title, image, price, discont_pric
         </div>
         
         <p>{ title }</p>
+      </Link>
+
+        
    
     </div>
   );

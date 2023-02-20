@@ -1,5 +1,10 @@
 .sales_section {
-    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+.sales_section > a {
+    text-decoration: none;
+    color: black;
 }
 
 .sales_section img {
@@ -25,7 +30,6 @@
     font-size: 30px;
     font-weight: 600;
     margin-left: 10px;
-    
  }
 
  .price_block p:nth-child(2) {

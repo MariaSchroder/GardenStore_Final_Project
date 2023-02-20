@@ -3,6 +3,7 @@ import s from './index.module.css'
 import { useSelector, useDispatch } from "react-redux";
 import CategorySectionCards from "../CategoriesSectionCard";
 import { load_categories } from "../../request/categories_req";
+import { Link } from "react-router-dom";
 
 
 export default function CategoriesSectionContainer() {
@@ -21,7 +22,9 @@ export default function CategoriesSectionContainer() {
         <div className={s.categories_route}>
           <span className={s.categories_catalog}>Catalog</span>
           
-          <button className={s.allCategories}>All categories</button>
+          <Link to="/categories">
+            <button className={s.allCategories}>All categories</button>
+          </Link>
         </div>
         
        <div className={s.categories_card}>
