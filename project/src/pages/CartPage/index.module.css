@@ -56,6 +56,7 @@
     width: 496px;
     height: 393px;
     margin-right: 25px;
+    position: relative;
 }
 
 .order > p {
@@ -112,4 +113,15 @@
     color: white;
     width: 446px;
     height: 73px;
+    cursor: pointer;
 }
+
+.error_message > p {
+    background-color: transparent;
+    color: rgb(246, 154, 7);
+    width: 400px;
+ 
+    position: absolute;
+    left: 35px;
+    top: 165px;
+  }
