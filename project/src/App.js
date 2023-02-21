@@ -9,7 +9,6 @@ import CategoryProductsPage from './pages/CategoryProductsPage';
 import ProductDescriptPage from './pages/ProductDescriptPage';
 
 
-
 function App() {
   return (
     <div>
@@ -20,7 +19,6 @@ function App() {
           <Route path='categories' element={<CategoriesPage />} />
           <Route path='categories/:category' element={<CategoryProductsPage />} />
           <Route path='products/:id' element={<ProductDescriptPage />} />
-          
           <Route path='/cart' element={<CartPage />} />
         </Route>
       </Routes>
@@ -28,4 +26,6 @@ function App() {
   );
 }
 
+
 export default App;
+

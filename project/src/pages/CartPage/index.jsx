@@ -22,7 +22,6 @@ export default function CartPage() {
     mode:'onBlur'
   });
 
-  
   const submit = (data) => {
     console.log(data);
     reset();
@@ -37,7 +36,6 @@ export default function CartPage() {
   });
 
 
-
   return (
     <div className={s.cart}>
       <p>Shopping cart</p>
@@ -48,8 +46,6 @@ export default function CartPage() {
           <p>Back to the store <span>&#62;</span></p>
         </Link>
       </div>
-      
-      
         
       <div className={s.cart_end_order}>
         {
@@ -81,6 +77,7 @@ export default function CartPage() {
               name="telNumber" 
               placeholder="+49 ..."
               {...telNumberRegister}
+              autocomplete="off"
               />
             <button className={s.btn} onSubmit={submit}>Order</button>
           </form>
@@ -94,3 +91,4 @@ export default function CartPage() {
     </div>
   );
 }
+

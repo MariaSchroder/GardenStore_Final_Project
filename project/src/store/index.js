@@ -9,8 +9,6 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
 
-
-
 const rootReducer = combineReducers({
     
     categories: categoriesReducer,
@@ -33,4 +31,5 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 export const store = createStore(persistedReducer, compose(applyMiddleware(thunk)));
 //export const store = createStore(rootReducer, applyMiddleware(thunk));
 export const persistor = persistStore(store);
+
 

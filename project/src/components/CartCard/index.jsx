@@ -5,9 +5,6 @@ import { useDispatch } from "react-redux";
 import { decrementCount, deleteCard, incrementCount } from "../../store/reducers/cart"; 
 
 
-
-
-
 export default function CartCard({ id, title, price, discont_price, image, count }) {
   
   const dispatch = useDispatch();
@@ -17,7 +14,6 @@ export default function CartCard({ id, title, price, discont_price, image, count
   const decrement = () => dispatch(decrementCount(id));
 
   
-
   return (
     <div className={s.cart_card}>
       
@@ -41,13 +37,8 @@ export default function CartCard({ id, title, price, discont_price, image, count
           </div>
           
           <RiCloseLine onClick={delete_card} className={s.cross}/>
-          
-          
-       
-        
-        
         </div>
-      </div>
-    
+      </div> 
   )
 }
+

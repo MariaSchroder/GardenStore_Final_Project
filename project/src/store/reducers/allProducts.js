@@ -53,11 +53,3 @@ export const allProductsReducer = (state = defaultState, action) => {
 }
 
 
-
-
-
-
-
-
-
-

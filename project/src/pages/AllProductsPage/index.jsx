@@ -7,8 +7,6 @@ import { Link } from "react-router-dom";
 import AllProductsSort from "../../components/AllProductsSort";
 
 
-
-
 export default function AllProductsPage() {
   
   const dispatch = useDispatch();
@@ -38,6 +36,6 @@ export default function AllProductsPage() {
         }
       </div>
     </div>
-    
   );
 }
+

@@ -12,6 +12,7 @@ export default function CategoryProductCard({id, title, image, price, discont_pr
   const dispatch = useDispatch();
   const add_to_cart = () => dispatch(addToCart({id, title, image, price, discont_price }));
 
+
   return (
     <div className={s.category_card}>
       <Link to={`/products/${id}`}>
@@ -31,6 +32,7 @@ export default function CategoryProductCard({id, title, image, price, discont_pr
 
       <button onClick={add_to_cart}>Add to cart</button>
     </div>
-     
   );
 }
+
+

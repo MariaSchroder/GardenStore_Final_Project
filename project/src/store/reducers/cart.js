@@ -15,7 +15,6 @@ export const decrementCount = payload => ({ type: DECREMENT_COUNT, payload });
 
 
 
-
 const checkProduct = (state, payload) => {
     const productInState = state.find(el => el.id === payload.id);
     if (productInState) {
@@ -28,6 +27,7 @@ const checkProduct = (state, payload) => {
         }]
     }
 }
+
 
 
 export const cartReducer = (state = defaultState, action) => {
@@ -62,3 +62,4 @@ export const cartReducer = (state = defaultState, action) => {
         return state
     }
 }
+

@@ -36,6 +36,6 @@ export default function CategoriesSectionContainer() {
        </div>
       </div>
     </section>
-    
   );
 }
+

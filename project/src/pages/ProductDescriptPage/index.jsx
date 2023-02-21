@@ -48,12 +48,9 @@ export default function ProductDescriptPage() {
           <button className={s.btn} onClick={add_to_cart}>To cart</button>
           <p className={s.descr}>Description:</p>
           <p className={s.product_descr}>{ description }</p>
-          
-          
         </div>
-  
       </div>
     </div>
-  
   );
 }
+

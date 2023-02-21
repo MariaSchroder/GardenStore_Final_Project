@@ -35,3 +35,5 @@ export default function AllProducts({id, title, image, price, discont_price }) {
     
   );
 }
+
+

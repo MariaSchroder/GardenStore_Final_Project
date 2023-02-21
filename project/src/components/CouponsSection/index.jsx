@@ -35,13 +35,13 @@ export default function CouponsSection() {
           <p className={s.first_order}>on the first order</p>
         </div>
         
-
         <form className={s.discount_form} id='coupon' onSubmit={handleSubmit(submit)}>
           <input 
             type="text" 
             name="telNumber" 
             placeholder="+49 ..."
             {...telNumberRegister}
+            autocomplete="off"
           />
           <button onSubmit={submit}>Get a discount</button>
         </form>
@@ -49,11 +49,9 @@ export default function CouponsSection() {
         <div className={s.error_message}>
           {errors.telNumber && <p>{errors.telNumber?.message}</p>}
         </div>
-
       </div>
     </section>
   );
 }
-
 
 

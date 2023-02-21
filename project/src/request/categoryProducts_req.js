@@ -14,3 +14,4 @@ export const load_category_products = category => {
             })
     }    
 }
+

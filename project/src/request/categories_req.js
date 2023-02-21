@@ -5,3 +5,4 @@ export const load_categories = dispatch => {
         .then(resp => resp.json())
         .then(json => dispatch(loadCategories(json)))
 }
+

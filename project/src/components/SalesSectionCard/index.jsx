@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import s from './index.module.css'
 
+
 export default function SalesSectionCard({ id, title, image, price, discont_price }) {
   
   const discount = Math.round(((price - discont_price) / price) * 100);
@@ -9,7 +10,6 @@ export default function SalesSectionCard({ id, title, image, price, discont_pric
   
   return (
     <div className={s.sales_section}>
-
       <Link to={`/products/${id}`}>
         <img src={`http://localhost:3333${image}`} alt={ title } />
         
@@ -21,12 +21,8 @@ export default function SalesSectionCard({ id, title, image, price, discont_pric
         
         <p>{ title }</p>
       </Link>
-
-        
-   
     </div>
   );
 }
-
 
 

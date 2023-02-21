@@ -12,3 +12,4 @@ export const load_all_products = dispatch => {
             dispatch(loadAllProducts(payload))
         })
 }    
+

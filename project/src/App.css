@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 
 * {
     padding: 0;
@@ -8,3 +8,4 @@
     background-color: white;
     font-family: 'Montserrat', sans-serif; 
 }
+

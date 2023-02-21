@@ -6,7 +6,6 @@ import s from './index.module.css'
 export default function CategoriesCards({ id, title, image }) { 
   
 return ( 
-
   <div className={s.categories}> 
     
     <Link to={`/categories/${id}`}>

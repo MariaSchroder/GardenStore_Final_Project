@@ -10,7 +10,3 @@ export const load_product = id => {
     }    
 }
 
-
-
-
-

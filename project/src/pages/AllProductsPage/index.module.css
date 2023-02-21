@@ -10,6 +10,7 @@
     text-decoration: none;
     color: gray;
 } 
+
 .all_products_container a > p{
     margin-left: 15px;
 } 
@@ -18,7 +19,6 @@
     font-size: 40px;
     font-weight: 700;
     margin: 70px 15px;
-
 } 
 
 .all_products_page {
@@ -26,3 +26,4 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
+

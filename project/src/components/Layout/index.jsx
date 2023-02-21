@@ -4,11 +4,13 @@ import Footer from "../Footer";
 import Nav from "../Nav";
 import s from './index.module.css'
 
+
 export default function Layout() {
+  
   return (
-    <div>
+    <div className={s.outlet}>
         <Nav />
-        <main className={['wrapper', s.outlet].join(' ')}>
+        <main>
           <Outlet />
         </main>
         <Footer />

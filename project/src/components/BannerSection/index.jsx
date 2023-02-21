@@ -19,6 +19,6 @@ export default function BannerSection() {
         <img src={ flowerbed_img } alt="flowerbed" />
       </div>
       </section>
-    
   );
 }
+

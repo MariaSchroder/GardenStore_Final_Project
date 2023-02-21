@@ -20,9 +20,7 @@ export default function CategoryProductsPage() {
     dispatch(load_category_products(category))
   }, []);
 
-  
   const categoryTitle = category_title.length >= 1 ? category_title[category - 1].title : "";
-
 
   
   return (
@@ -46,3 +44,5 @@ export default function CategoryProductsPage() {
     </div>
   );
 }
+
+

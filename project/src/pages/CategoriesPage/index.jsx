@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { load_categories } from "../../request/categories_req";
 import CategoriesCards from "../../components/CategoriesCards";
 
+
 export default function CategoriesPage() {
   
   const dispatch = useDispatch();
@@ -28,3 +29,4 @@ export default function CategoriesPage() {
     </div>
   );
 }
+

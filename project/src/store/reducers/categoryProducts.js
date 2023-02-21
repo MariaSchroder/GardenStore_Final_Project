@@ -13,8 +13,6 @@ export const searchCategoryProductsPrice = payload => ({ type: SEARCH_CATEGORY_P
 
 
 
-
-
 export const categoryProductsReducer = (state = defaultState, action) => {
     
     if (action.type === LOAD_CATEGORY_PRODUCTS) {
@@ -55,3 +53,4 @@ export const categoryProductsReducer = (state = defaultState, action) => {
         return state
     }
 }
+

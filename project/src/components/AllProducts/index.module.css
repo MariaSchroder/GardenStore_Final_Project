@@ -7,7 +7,6 @@
     object-fit: contain;
     width: 300px;
     height: 300px;
-
 }
 
 .product_title {
@@ -16,7 +15,6 @@
     position: absolute;
     left: -12px;
     margin: 12px;
-
 }
 
 .all_products_card > a {
@@ -40,7 +38,6 @@
     font-weight: 600;
 }
 
-
  .product_price_block p:nth-child(2) {
     font-size: 20px;
     font-weight: 500;
@@ -54,9 +51,6 @@
     color: #FF32A1; 
     margin-right: 40px;  
  }
-
-
- 
 
  .all_products_card button{
     border: 2px solid #339933;
@@ -78,3 +72,5 @@
  .all_products_card:hover button{
    display: block;
  }
+
+ 

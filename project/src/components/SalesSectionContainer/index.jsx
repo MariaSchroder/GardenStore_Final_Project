@@ -16,7 +16,6 @@ export default function SalesSectionContainer() {
   }, []);
   
 
-  
   return (
     <section className={s.sales_section} id="sale">
       <div>
@@ -35,9 +34,8 @@ export default function SalesSectionContainer() {
                     .map( el => <SalesSectionCard key={el.id} {...el} />)
           }
         </div>
-      
-      </div>
-         
+      </div> 
     </section>
   );
 }
+

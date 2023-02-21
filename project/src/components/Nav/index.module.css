@@ -4,6 +4,7 @@
     align-items: center;
     margin: 60px auto;
     max-width: 1440px;
+    position: relative;
 }  
 
 .nav_left_container {
@@ -18,21 +19,20 @@
 .nav_left_container img {
     width: 72px;
     height: 72px;
-    margin-right: 59px;
+    margin-right: 20px;
 }
 
-.catalog {
-    border: 2px solid #339933;
-    border-radius: 5px;
-    width: 129px;
-    height: 49px;
-    text-align: center;
-    background-color: #339933;
-    color: #FFFFFF;
-    padding-top: 12px;
-    font-size: 19px;
-    font-weight: 600;
-    text-decoration: none
+.shop_title {
+    font-family: 'Kalam', cursive;
+    font-size: 40px;
+    color: #339933;
+    text-shadow: 1px 1px 2px #287b28;
+    position: absolute;
+    top: 16px;
+}
+
+.nav_left_container a {
+    text-decoration: none;   
 }
 
 .nav_right_container {
@@ -44,7 +44,6 @@
     font-size: 19px;
     font-weight: 400;
     cursor: pointer;
-
 }
 
 .nav_right_container a {
@@ -63,3 +62,4 @@
 .cart_logo {
     font-size: 30px;
 }
+
