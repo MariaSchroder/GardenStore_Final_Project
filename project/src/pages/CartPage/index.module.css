@@ -115,6 +115,10 @@
     cursor: pointer;
 }
 
+.btn:hover {
+    font-size: 32px;
+ } 
+
 .error_message > p {
     background-color: transparent;
     color: rgb(246, 154, 7);

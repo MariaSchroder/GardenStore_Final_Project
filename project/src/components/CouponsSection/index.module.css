@@ -71,6 +71,12 @@
     cursor: pointer;
  }
 
+ .discount_form button:hover {
+   font-size: 30px;
+   font-weight: 600;
+   border: 3px solid white;
+}
+
  .error_message > p {
    background-color: transparent;
    color: rgb(246, 154, 7);   

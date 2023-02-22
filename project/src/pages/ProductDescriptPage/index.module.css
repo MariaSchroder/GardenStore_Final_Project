@@ -75,6 +75,10 @@
     height: 86px;
     cursor: pointer;
 }
+
+.btn:hover {
+    font-size: 32px;
+}
  
  .descr {
     font-size: 20px;

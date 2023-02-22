@@ -41,7 +41,6 @@ export default function CouponsSection() {
             name="telNumber" 
             placeholder="+49 ..."
             {...telNumberRegister}
-            autocomplete="off"
           />
           <button onSubmit={submit}>Get a discount</button>
         </form>

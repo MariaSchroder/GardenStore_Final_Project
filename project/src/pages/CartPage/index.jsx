@@ -27,6 +27,8 @@ export default function CartPage() {
     reset();
   };
   
+  console.log(cart);
+
   const telNumberRegister = register('telNumber', {
     required: ' * The field "telephone number" is required',
     pattern: {
@@ -77,7 +79,6 @@ export default function CartPage() {
               name="telNumber" 
               placeholder="+49 ..."
               {...telNumberRegister}
-              autocomplete="off"
               />
             <button className={s.btn} onSubmit={submit}>Order</button>
           </form>
