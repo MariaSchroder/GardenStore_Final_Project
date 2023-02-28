@@ -3,6 +3,7 @@ import s from './index.module.css'
 import { Link } from 'react-router-dom'
 import logo from './media/logo.png'
 import { BsHandbag } from 'react-icons/bs'
+import { HashLink } from "react-router-hash-link";
 
 
 export default function Nav() {
@@ -19,9 +20,11 @@ export default function Nav() {
       <nav className={s.nav_right_container }>
         <Link to='/categories'>Catalogs</Link>
         <Link to='/allproducts'>All products</Link>
-        <p><a href="/#coupon">Coupon</a></p>
-        <p><a href="/#sale">Sale</a></p>
-        <p><a href="#contacts">Contact</a></p>
+        
+        <HashLink smooth to='/#coupon'>Coupon</HashLink>
+        <HashLink smooth to='/#sale'>Sale</HashLink>
+        <HashLink smooth to='/#contacts'>Contact</HashLink>
+
         <Link to='/cart' className={s.cart_logo}><BsHandbag /></Link>
       </nav>
     </header>

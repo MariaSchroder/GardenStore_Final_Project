@@ -32,7 +32,7 @@
 }
 
 .nav_left_container a {
-    text-decoration: none;   
+    text-decoration: none; 
 }
 
 .nav_right_container {
@@ -41,22 +41,24 @@
     justify-content: space-between;
     gap: 50px;
     margin: 20px;
-    font-size: 19px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     cursor: pointer;
 }
 
 .nav_right_container a {
     text-decoration: none;
     color: #000000;  
+    border-bottom: 1px solid transparent;
 }
 
 .nav_right_container a:hover  {
    color: #339933;
 }
 
-.nav_right_container p:hover  {
+.nav_right_container a:hover  {
     color: #339933;
+    border-bottom: 1px solid #339933;
  }
 
 .cart_logo {
